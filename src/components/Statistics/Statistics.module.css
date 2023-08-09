@@ -1,0 +1,17 @@
+.wrapperStatistics {
+  text-align: center;
+}
+
+.titleStatistics {
+  color: rgb(76, 171, 255);
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.listStatistics {
+
+}
+
+.itemStatistics {
+  font-size: 25px;
+}
