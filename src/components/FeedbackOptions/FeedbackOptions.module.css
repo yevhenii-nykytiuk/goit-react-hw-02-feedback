@@ -5,8 +5,14 @@
 }
 
 .wrapperBtn {
+  display: flex;
   text-align: center;
+  width: 30%;
 }
+
+/* .btnItem {
+  display: flex;
+} */
 
 .btnReviews {
   width: 100px;
@@ -14,6 +20,6 @@
   cursor: pointer;
 }
 
-.btnReviews:not(:last-child) {
+/* .btnReviews:not(:last-child) {
   margin-right: 30px;
-}
+} */

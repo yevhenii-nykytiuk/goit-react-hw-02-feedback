@@ -21,6 +21,14 @@ code {
     monospace;
 }
 
+a {
+  text-decoration: none;
+}
+
+li, ul {
+  list-style: none;
+}
+
 
 
 

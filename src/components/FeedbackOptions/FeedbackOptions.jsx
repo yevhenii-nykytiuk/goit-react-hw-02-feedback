@@ -1,16 +1,36 @@
 import css from './FeedbackOptions.module.css';
 
 
-export const FeedbackOptions = ({goodCountBtn, neutralCountBtn, badCountBtn}) => {
+
+export const Section = ({title, children}) => {
   return (
     <>
-    <h1 className={css.title}>Please leave feedback</h1>
-
-    <div className={css.wrapperBtn}>
-      <button type="button" className={css.btnReviews} onClick={goodCountBtn}>Good</button>
-      <button type="button" className={css.btnReviews} onClick={neutralCountBtn}>Neutral</button>
-      <button type="button" className={css.btnReviews} onClick={badCountBtn}>Bad</button>
-    </div>
+      {title && <h1 className={css.title}>{title}</h1>}
+      {children}
     </>
   )
 }
+
+export const FeedbackOptions = ({options}) => {
+  return (
+    <>
+    <ul className={css.wrapperBtn}>
+
+    {options.map((option, index) => (
+      
+      <li className={css.btnItem} key={index}>
+        <button className={css.btnReviews}>{option}</button>
+      </li>
+
+    ))}
+      
+    </ul>
+    </>
+  )
+}
+
+
+
+
+
+
